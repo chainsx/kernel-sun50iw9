@@ -10,6 +10,7 @@ dtb-$(CONFIG_ARCH_SUN50IW6P1) += sun50iw6p1-soc.dtb
 
 dtb-$(CONFIG_ARCH_SUN50IW8P1) += sun50iw8p1-fpga.dtb sun50iw8p1-soc.dtb
 dtb-$(CONFIG_ARCH_SUN50IW9P1) += sun50i-h616-orangepi-zero2.dtb
+dtb-$(CONFIG_ARCH_SUN50IW9P1) += sun50i-h616-yuzukichameleon.dtb
 dtb-$(CONFIG_ARCH_SUN50IW10P1) += board.dtb
 dtb-$(CONFIG_ARCH_SUN50IW5T) += sun50iw5t-fpga.dtb
 

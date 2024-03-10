@@ -1,4 +1,4 @@
-dts-dirs += sunxi
+dts-dirs += allwinner
 
 subdir-y	:= $(dts-dirs)
 
