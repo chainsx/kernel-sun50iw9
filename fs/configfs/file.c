@@ -496,12 +496,12 @@ static int configfs_release_bin_file(struct inode *inode, struct file *filp)
 		len = bin_attr->write(item, buffer->bin_buffer,
 				buffer->bin_buffer_size);
 
-		/* vfree on NULL is safe */
-		vfree(buffer->bin_buffer);
-		buffer->bin_buffer = NULL;
-		buffer->bin_buffer_size = 0;
-		buffer->needs_read_fill = 1;
 	}
+
+	vfree(buffer->bin_buffer);
+	buffer->bin_buffer = NULL;
+	buffer->bin_buffer_size = 0;
+	buffer->needs_read_fill = 1;
 
 	ret = configfs_release(inode, filp);
 	if (len < 0)
